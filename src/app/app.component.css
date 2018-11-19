@@ -17,3 +17,10 @@
      padding-top : 0px;
      padding-bottom : 0px;
  }
+
+ .homepage-top{
+     background-image: url("https://images.wallpaperscraft.com/image/toronto_skyscrapers_night_panorama_120232_2560x1440.jpg");
+     height: 400px;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
