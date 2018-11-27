@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-bar-padding" style="background-color: black;">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-bar-padding" style="background-color: black;" detect-scroll (onScroll)=handleScroll($event)>
        <a class="navbar-brand" href="#"></a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,26 +19,91 @@
         </div>
 </nav>
 
-<div class="contentPadding">
+
     <div class="row homepage-top">
-        <div class="container-fluid">
-                <div style="z-index: -1;">
-                        <!--<img class="img-fluid" src="assets/images/homepage_top.jpg" height="400px">-->
-                        <div class="card-deck">
-                                
-                                <div class="card">
-                                  <img class="card-img-top" src=".../100px200/" alt="Card image cap">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                  </div>
-                                </div>
-                                
-                              </div>
-                </div>
+        <div class="contact-card">
+                
+          <div id="DIV_1" class="contact-card contentPadding">
+            <div id="DIV_2">
+              <h4 id="H4_3">
+                <span id="SPAN_4">Rachel Smith</span>
+              </h4>
+              <h6 id="H6_5">
+                <span id="SPAN_6"><span id="SPAN_7">LAWYER &amp; CONSULTANT</span></span>
+              </h6>
+              <p id="P_8">
+              </p>
+              <h6 id="H6_9">
+                <span id="SPAN_10"><span id="SPAN_11">Phone:</span></span>
+              </h6>
+              <p id="P_12">
+                <span id="SPAN_13"><span id="SPAN_14">123-456-7890</span></span>
+              </p>
+              <p id="P_15">
+              </p>
+              <h6 id="H6_16">
+                <span id="SPAN_17"><span id="SPAN_18">Email:</span></span>
+              </h6>
+              <p id="P_19">
+                <span id="SPAN_20"><span id="SPAN_21"></span></span>
+                <object id="OBJECT_22">
+                  <a href="mailto:info@mysite.com" id="A_23">info@mysite.com</a>
+                </object>
+              </p>
+              <p id="P_24">
+              </p>
+              <h6 id="H6_25">
+                <span id="SPAN_26"><span id="SPAN_27">Address:</span></span>
+              </h6>
+              <p id="P_28">
+                <span id="SPAN_29"><span id="SPAN_30">500 Terry Francois Street</span></span>
+              </p>
+              <p id="P_31">
+                <span id="SPAN_32"><span id="SPAN_33">San Francisco, CA 94158</span></span>
+              </p>
+              <p id="P_34">
+                <span id="SPAN_35"><span id="SPAN_36"><span id="SPAN_37">​</span></span></span>
+              </p>
+              <h6 id="H6_38">
+                <span id="SPAN_39"><span id="SPAN_40">Date of Birth:</span></span>
+              </h6>
+              <p id="P_41">
+                <span id="SPAN_42"><span id="SPAN_43">March 14th, 1984</span></span>
+              </p>
+              <h6 id="H6_44">
+                <span id="SPAN_45">​</span>
+              </h6>
+            </div>
+            <style type="text/css" id="STYLE_46">.txtNew {word-wrap:break-word;text-align:start;}
+          .txtNew_override-left * {text-align:left !important;}
+          .txtNew_override-right * {text-align:right !important;}
+          .txtNew_override-center * {text-align:center !important;}
+          .txtNew_override-justify * {text-align:justify !important;}
+          .txtNew > * {pointer-events:auto;}
+          .txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
+          .txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
+          .txtNew ul {list-style-type:disc;}
+          .txtNew ol {list-style-type:decimal;}
+          .txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
+          .txtNew ul ul ul,.txtNew ol ul ul {list-style-type:square;}
+          .txtNew ul ol ul,.txtNew ol ol ul {list-style-type:square;}
+          .txtNew ul[dir="rtl"],.txtNew ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
+          .txtNew ul[dir="rtl"] ul,.txtNew ul[dir="rtl"] ol,.txtNew ol[dir="rtl"] ul,.txtNew ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
+          .txtNew p {margin:0;line-height:normal;letter-spacing:normal;}
+          .txtNew h1 {margin:0;line-height:normal;letter-spacing:normal;}
+          .txtNew h2 {margin:0;line-height:normal;letter-spacing:normal;}
+          .txtNew h3 {margin:0;line-height:normal;letter-spacing:normal;}
+          .txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
+          .txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
+          .txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
+          .txtNew a {color:inherit;}
+            </style>
+          </div>
                        
+        </div>
+
+        <div id="Image" class="box" [@scrollAnimation]="state">
+            <img id="IMG_1" alt="" src="https://static.wixstatic.com/media/23e8ad88ae744df0bd7f5221f3d67b0e.jpg/v1/crop/x_90,y_275,w_2349,h_2350/fill/w_588,h_588,al_c,q_80,usm_0.66_1.00_0.01/23e8ad88ae744df0bd7f5221f3d67b0e.webp" />
         </div>
     </div>
     <router-outlet></router-outlet> 
-</div>
